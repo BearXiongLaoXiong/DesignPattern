@@ -45,6 +45,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="_01_FactoryPattern.cs" />
+    <Compile Include="_02_AbstractFactoryPattern.cs" />
+    <Compile Include="_03_SingletonPattern.cs" />
+    <Compile Include="_04_BuilderPattern.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
