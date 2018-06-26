@@ -48,6 +48,9 @@
     <Compile Include="_02_AbstractFactoryPattern.cs" />
     <Compile Include="_03_SingletonPattern.cs" />
     <Compile Include="_04_BuilderPattern.cs" />
+    <Compile Include="_05_PrototypePattern.cs" />
+    <Compile Include="_06_AdapterPattern.cs" />
+    <Compile Include="_07_BridgePattern.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

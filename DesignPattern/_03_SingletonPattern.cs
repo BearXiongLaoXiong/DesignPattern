@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace DesignPattern._03_Singleton
 {
+    /// <summary>
+    /// 单例模式
+    /// </summary>
     public class _03_SingletonPattern
     {
         public static void Run()
@@ -15,8 +18,8 @@ namespace DesignPattern._03_Singleton
 
             var obj = Signleton.GetInstance();
             obj.ShowMessage();
-            Console.WriteLine("Thread.Sleep(3000);");
-            Thread.Sleep(3000);
+            Console.WriteLine("Thread.Sleep(2000);");
+            Thread.Sleep(2000);
             obj.ShowMessage();
             Console.WriteLine();
         }
