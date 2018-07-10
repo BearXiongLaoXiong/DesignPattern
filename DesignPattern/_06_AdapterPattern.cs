@@ -1,19 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.Serialization;
 
 namespace DesignPattern._06_Adapter
 {
-    /// <summary>
-    /// 适配器模式
-    /// </summary>
+    [DataContract(Name = "适配器模式")]
     public class _06_AdapterPattern
     {
         public static void Run()
         {
-            Console.WriteLine(nameof(_06_AdapterPattern));
+            Console.WriteLine(typeof(_06_AdapterPattern).GetClassName());
 
             var audioPlayer = new AudioPlayer();
             audioPlayer.Play("mp3", "beyond the horizon.mp3");

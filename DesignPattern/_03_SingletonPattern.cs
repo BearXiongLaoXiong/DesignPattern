@@ -1,25 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
+using System.Runtime.Serialization;
 
 namespace DesignPattern._03_Singleton
 {
-    /// <summary>
-    /// 单例模式
-    /// </summary>
+    [DataContract(Name = "单例模式")]
     public class _03_SingletonPattern
     {
         public static void Run()
         {
-            Console.WriteLine(nameof(_03_SingletonPattern));
+            Console.WriteLine(typeof(_03_SingletonPattern).GetClassName());
 
             var obj = Signleton.GetInstance();
             obj.ShowMessage();
             Console.WriteLine("Thread.Sleep(2000);");
-            Thread.Sleep(2000);
+            //Thread.Sleep(2000);
             obj.ShowMessage();
             Console.WriteLine();
         }

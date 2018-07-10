@@ -1,19 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.Serialization;
 
 namespace DesignPattern._01_Factory
 {
-    /// <summary>
-    /// 工厂模式
-    /// </summary>
-    class  _01_FactoryPattern
+    [DataContract(Name = "工厂模式")]
+    class _01_FactoryPattern
     {
         public static void Run()
         {
-            Console.WriteLine(nameof(_01_FactoryPattern));
+            Console.WriteLine(typeof(_01_FactoryPattern).GetClassName());
+
             var shapeFactory = new ShapeFactory();
             var shape1 = shapeFactory.GetShape("Rectangle");
             shape1.Draw();
@@ -23,6 +19,7 @@ namespace DesignPattern._01_Factory
 
             var shape3 = shapeFactory.GetShape("Circle");
             shape3.Draw();
+
             Console.WriteLine();
         }
     }

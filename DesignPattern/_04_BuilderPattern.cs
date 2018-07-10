@@ -1,19 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.Serialization;
 
 namespace DesignPattern._04_Builder
 {
-    /// <summary>
-    /// 建造者模式
-    /// </summary>
+    [DataContract(Name = "建造者模式")]
     public class _04_BuilderPattern
     {
         public static void Run()
         {
-            Console.WriteLine(nameof(_04_BuilderPattern));
+            Console.WriteLine(typeof(_04_BuilderPattern).GetClassName());
 
             MealBuilder mealBuilder = new MealBuilder();
 

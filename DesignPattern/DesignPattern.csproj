@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="_01_FactoryPattern.cs" />
@@ -51,6 +53,9 @@
     <Compile Include="_05_PrototypePattern.cs" />
     <Compile Include="_06_AdapterPattern.cs" />
     <Compile Include="_07_BridgePattern.cs" />
+    <Compile Include="_08_FilterPattern.cs" />
+    <Compile Include="_09_CompositePattern.cs" />
+    <Compile Include="_10_DecoratorPattern.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

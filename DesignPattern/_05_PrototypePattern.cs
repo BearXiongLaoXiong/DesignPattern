@@ -1,20 +1,15 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
+using System.Runtime.Serialization;
 
 namespace DesignPattern._05_Prototype
 {
-    /// <summary>
-    /// 原型模式
-    /// </summary>
+    [DataContract(Name = "原型模式")]
     public class _05_PrototypePattern
     {
         public static void Run()
         {
-            Console.WriteLine(nameof(_05_PrototypePattern));
+            Console.WriteLine(typeof(_05_PrototypePattern).GetClassName());
 
             ShapeCache.LoadCache();
 

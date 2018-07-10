@@ -1,19 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.Serialization;
 
 namespace DesignPattern._02_AbstractFactory
 {
-    /// <summary>
-    /// 抽象工厂模式
-    /// </summary>
+    [DataContract(Name = "抽象工厂模式")]
     public class _02_AbstractFactoryPattern
     {
         public static void Run()
         {
-            Console.WriteLine(nameof(_02_AbstractFactoryPattern));
+            Console.WriteLine(typeof(_02_AbstractFactoryPattern).GetClassName());
+
             var shapeFactory = FactoryProducer.GetFactory("Shape");
 
             var shape1 = shapeFactory.GetShape("Circle");

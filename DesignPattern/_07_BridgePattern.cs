@@ -1,16 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.Serialization;
 
 namespace DesignPattern._07_Bridge
 {
+    [DataContract(Name = "桥接模式")]
     public class _07_BridgePattern
     {
         public static void Run()
         {
-            Console.WriteLine(nameof(_07_BridgePattern));
+            Console.WriteLine(typeof(_07_BridgePattern).GetClassName());
 
             var redCircle = new Circle(100, 100, 10, new RedCircle());
             var greenCircle = new Circle(100, 100, 10, new GreenCircle());
@@ -46,7 +44,7 @@ namespace DesignPattern._07_Bridge
 
     public class Circle : Shape
     {
-        private int _x, _y,_radius;
+        private int _x, _y, _radius;
         public Circle(int x, int y, int radius, IDrawApi drawApi)
             : base(drawApi)
         {

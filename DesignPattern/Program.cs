@@ -6,6 +6,9 @@ using DesignPattern._04_Builder;
 using DesignPattern._05_Prototype;
 using DesignPattern._06_Adapter;
 using DesignPattern._07_Bridge;
+using DesignPattern._08_Filter;
+using DesignPattern._09_Composite;
+using DesignPattern._10_Decorator;
 
 namespace DesignPattern
 {
@@ -23,6 +26,9 @@ namespace DesignPattern
             //结构型模式
             _06_AdapterPattern.Run();
             _07_BridgePattern.Run();
+            _08_FilterPattern.Run();
+            _09_CompositePattern.Run();
+            _10_DecoratorPattern.Run();
             //行为型模式
         Console.ReadLine();
         }
